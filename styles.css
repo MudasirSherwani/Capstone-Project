@@ -61,7 +61,7 @@ body {
 }
 
 .headline-container {
-  padding: 2em;
+  padding: 1em;
   margin: 3em 0;
 }
 
@@ -125,7 +125,11 @@ body {
   font-weight: 500;
 }
 
-/* program section */
+.headline-container .nba-email {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
 .programs-section {
   background-image: url(../Assets/images/pattern_bg.png);
   color: #d3d3d3;
@@ -366,7 +370,7 @@ body {
 }
 
 .footer-container .copyright .logo {
-  width: 54px;
+  width: 84px;
   height: 84px;
   align-self: center;
 }
