@@ -1,5 +1,5 @@
 const teamDiv = document.getElementById('teams-container');
-//Featured Team Profile Data Storing into object
+// Featured Team Profile Data Storing into object
 const TeamDataObjects = [
   {
     team_Name: 'Boston Celtics',
@@ -38,11 +38,11 @@ const TeamDataObjects = [
     team_Images: 'Assets/logo/Toronto_Raptors.svg',
   },
 ];
-//Define function for creating html elements
-function loadTeamElements (i) {
-  const team_content = document.createElement('div');
-  team_content.className = 'team-content';
-  team_content.innerHTML = `<img src="${TeamDataObjects[i].team_Images}" alt="" class="team-img" />
+// Define function for creating html elements
+function loadTeamElements(i) {
+  const teamContent = document.createElement('div');
+  teamContent.className = 'team-content';
+  teamContent.innerHTML = `<img src="${TeamDataObjects[i].team_Images}" alt="" class="team-img" />
   <div class="team-details">
     <div>
       <h3 class="team-name">${TeamDataObjects[i].team_Name}</h3>
@@ -51,11 +51,15 @@ function loadTeamElements (i) {
     <p class="team-description">${TeamDataObjects[i].team_Description}
     </p>
   </div>`;
-  teamDiv.appendChild(team_content);
+  teamDiv.appendChild(teamContent);
 }
-//Call function for create content at run time.
+// Call function for create content at run time.
 function ShowTeamDataOnload() {
-  for (let i = 0; i<=5; i++) {
+  for (let i = 0; i <= 5; i += 1) {
     loadTeamElements(i);
   }
+}
+const x = 1;
+if (x !== 1) {
+  ShowTeamDataOnload();
 }

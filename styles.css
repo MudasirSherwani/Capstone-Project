@@ -61,6 +61,12 @@ body {
   display: none;
 }
 
+.background-image {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
 .main {
   background-image: url(../Assets/images/airplane-flight-in-circle-around-earth.svg), url(../Assets/images/earth-grid-with-circular-pattern-around.svg), url(./Assets/images/pattern_bg.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
