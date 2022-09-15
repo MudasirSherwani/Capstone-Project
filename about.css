@@ -126,13 +126,13 @@
 }
 
 .prev-games-container .twenty-20 {
-  background: url(../Assets/images/game2020.jpg);
+  background: url(./Assets/images/game2020.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .prev-games-container .twenty-19 {
-  background: url(../Assets/images/game2019.jpg);
+  background: url(./Assets/images/game2019.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 1em;

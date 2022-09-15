@@ -68,7 +68,7 @@ body {
 }
 
 .main {
-  background-image: url(../Assets/images/airplane-flight-in-circle-around-earth.svg), url(../Assets/images/earth-grid-with-circular-pattern-around.svg), url(./Assets/images/pattern_bg.png);
+  background-image: url(./Assets/images/airplane-flight-in-circle-around-earth.svg), url(./Assets/images/earth-grid-with-circular-pattern-around.svg), url(./Assets/images/pattern_bg.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top 70% left, top 43% right, top 5% right 10%;
   background-size: auto, auto, 30px;
@@ -109,7 +109,7 @@ body {
   -webkit-background-clip: text;
   color: transparent;
   opacity: 1;
-  background-image: url(../Assets/images/people.jpeg);
+  background-image: url(./Assets/images/people.jpeg);
 }
 
 .headline-container .heading .normal-font {
@@ -149,7 +149,7 @@ body {
 }
 
 .programs-section {
-  background-image: url(../Assets/images/pattern_bg.png);
+  background-image: url(./Assets/images/pattern_bg.png);
   color: #d3d3d3;
 }
 
@@ -272,7 +272,7 @@ body {
 .team-section .teams-container .team-content {
   display: flex;
   gap: 1em;
-  background-image: url(../Assets/images/chess-board.svg);
+  background-image: url(./Assets/images/chess-board.svg);
   background-size: 30px;
   background-repeat: no-repeat;
 }
@@ -504,7 +504,7 @@ body {
   }
 
   .main {
-    background-image: url(../Assets/images/airplane-flight-in-circle-around-earth.svg), url(../Assets/images/earth-grid-with-circular-pattern-around-.svg), url(./Assets/images/pattern_bg.png);
+    background-image: url(./Assets/images/airplane-flight-in-circle-around-earth.svg), url(./Assets/images/earth-grid-with-circular-pattern-around-.svg), url(./Assets/images/pattern_bg.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: top 72% left 7.5%, top 52% right 32%, top 25% right 10%;
     background-size: auto, auto, 30px;
