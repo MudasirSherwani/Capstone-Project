@@ -512,9 +512,10 @@ body {
 
   .headline-container {
     padding: 12em 10em;
-    height: 90vh;
+    height: 95vh;
     width: 77%;
     font-size: 1.3em;
+    margin-bottom: 10em;
   }
 
   .programs-section .programs-cards {
