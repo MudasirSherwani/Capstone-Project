@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="mobile_menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>NBA About Page</title>
   </head>
@@ -13,15 +14,28 @@
     <header class="header-container">
       <div class="header-black">
         <ul>
-          <i>English</i>
-          <i>MyPage</i>
-          <i>Logout</i>
+          <li class="black-items fab fa-facebook-f gray"><a href=""></a></li>
+          <li class="black-items fab fa-twitter gray"><a href=""></a></li>
+          <li class="black-items"><a href="">English</a></li>
+          <li class="black-items"><a href="">My Page</a></li>
+          <li class="black-items"><a href="">Logout</a></li>
         </ul>
       </div>
       <div class="header-white">
-        <ul class="menu-bars">
-          <i class="fa-solid fa-bars fa-2x black"></i>
-        </ul>
+        <a href="./index.html" class="header-logo" ><img  src="./Assets/logo/logo-Nba.PNG" alt="NBA logo" class="nba-logo"/></a>
+          <ul class="menu-bars">
+            <i class="fa-solid fa-bars fa-2x black"></i>
+          </ul>
+        <nav class="navbar-container">
+          <ul class="navbar-list">
+            <li class="navbar-items"> <a href="./about.html" class="navbar-link">About</a> </li>
+            <li class="navbar-items"> <a href="#" class="navbar-link">Program</a> </li>
+            <li class="navbar-items"> <a href="#" class="navbar-link">Join</a> </li>
+            <li class="navbar-items"> <a href="#" class="navbar-link">Sponsor</a> </li>
+            <li class="navbar-items"> <a href="#" class="navbar-link">News</a> </li>
+            <li class="navbar-items"> <a href="./index.html" class="navbar-link red-border">NBA</a> </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="main">
@@ -50,8 +64,8 @@
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil omnis illum harum voluptatum error dignissimos facilis beatae assumenda saepe ut?
         </p>
         <div class="prev-game">
-          <div class="game-container twenty-20"
-            <div class="transparent">
+          <div class="game-container twenty-20">
+            <div class="bg-redish">
               <div class="show">
                 <h1 class="game-heading">2020</h1>
                 <p class="game-description">
@@ -61,7 +75,7 @@
             </div>
           </div>
           <div class="game-container twenty-19">
-            <div class="transparent">
+            <div class="bg-redish">
               <div class="show">
                 <h1 class="game-heading">2019</h1>
                 <p class="game-description">
@@ -73,9 +87,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer-container" id="footer">
+    <footer class="footer" id="footer">
       <section class="partners-container" id="partners">
-        <h4 class="partners-container__title">Partners</h4>
+        <h4 class="partners-title">Partners</h4>
         <div class="partners-list" id="sponsors">
           <img src="./Assets/logo/Logo_NbaInAbuDhabi.PNG" alt=" Logo for NBA In Abu Dhabi"class="partner-img"/>
           <img src="./Assets/logo/Logo_VisitAbuDhabi.PNG" alt="Logo for Visit Abu Dhabi"class="partner-img"/>
@@ -91,5 +105,7 @@
         <p class="copyright-text"> @2022 NBA. <br />Some Rights Reserved.</p>
       </section>
     </footer>
+    <script src="./script.js"></script>
+    <script src="./mobile_menu.js"></script>
   </body>
 </html>

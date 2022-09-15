@@ -4,7 +4,7 @@
   --color-white: #d3d3d3;
 }
 
-.main-container {
+.headline-container {
   margin: 0 0;
   gap: 3em;
   font-size: 1.2em;
@@ -108,7 +108,7 @@
   margin-top: 2em;
 }
 
-prev-games-container .transparent {
+.prev-games-container .bg-redish {
   width: 100%;
   height: 100%;
   display: flex;
@@ -120,7 +120,7 @@ prev-games-container .transparent {
   padding: 2em;
 }
 
-.game-container .transparent .show {
+.game-container .bg-redish .show {
   opacity: 1;
   color: #fff;
 }
@@ -153,4 +153,87 @@ prev-games-container .transparent {
 
 .footer .copyright {
   background-color: #d3d3d3;
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin: 5em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main .hello-world {
+    display: none;
+  }
+
+  .headline-container .heading-details {
+    font-size: 2em;
+    
+  }
+
+  .headline-container .nba-email {
+    font-size: 3em;
+  }
+
+  .headline-container .program-location {
+    font-size: 2.5em;
+  }
+
+  .headline-container .about-logo-container .logo-description {
+    padding: 1em 4em 0;
+    font-weight: normal;
+  }
+
+  .headline-container .about-logo-container .logo-description .hidden {
+    display: inline;
+  }
+
+  .headline-container .about-logo-container .prev-game {
+    display: flex;
+    padding: 3em;
+    gap: 2em;
+  }
+
+  .prev-games-container .prev-game-description {
+    padding: 1em 0;
+    font-size: 2em;
+  }
+
+  .prev-games-container .prev-game-heading {
+    padding: 1em 0;
+    font-size: 3em;
+  }
+
+  .headline-container .about-logo-container .logo-image {
+    padding: 3em;
+    width: 50%;
+    margin: 3em auto 0;
+  }
+
+  .about-logo-container .logo-image {
+    padding: 3em;
+    width: 30%;
+  }
+
+  .partners-container {
+    display: none;
+  }
+
+  .prev-game {
+    padding: 5em;
+  }
+
+  .footer .copyright .copyright-text {
+    color: #d3d3d3;
+  }
+
+  .footer .copyright {
+    background-color: #272a31;
+  }
+
+  .footer {
+    background-color: #272a31;
+  }
 }

@@ -22,6 +22,10 @@
   background-color: #ec5242;
 }
 
+.gray {
+  color: #d3d3d3;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -53,11 +57,19 @@ body {
   display: none;
 }
 
+.header-container .header-logo {
+  display: none;
+}
+
 .main {
-  background-image: url(../Assets/images/airplane-flight-in-circle-around-earth-svgrepo-com.svg), url(../Assets/images/earth-grid-with-circular-pattern-around-svgrepo-com.svg), url(./Assets/images/pattern_bg.png);
+  background-image: url(../Assets/images/airplane-flight-in-circle-around-earth.svg), url(../Assets/images/earth-grid-with-circular-pattern-around.svg), url(./Assets/images/pattern_bg.png);
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: top 70% left, top 43% right, top 5% right 10%;
   background-size: auto, auto, 30px;
+}
+
+.header-container .navbar-container {
+  display: none;
 }
 
 .headline-container {
@@ -211,8 +223,12 @@ body {
   cursor: pointer;
 }
 
-.programs-section .programs-btn .text-hidden {
+.programs-section .programs-btn .hidden {
   display: none;
+}
+
+.programs-section .programs-btn .visible {
+  display: inline;
 }
 
 /*  team section */
@@ -242,7 +258,7 @@ body {
 
 .team-section .teams-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2em;
   padding-top: 2em;
 }
@@ -250,15 +266,17 @@ body {
 .team-section .teams-container .team-content {
   display: flex;
   gap: 1em;
-  background-image: url(../Assets/images/chess-board-svgrepo-com.svg);
+  background-image: url(../Assets/images/chess-board.svg);
   background-size: 50px;
   background-repeat: no-repeat;
 }
 
 .team-section .teams-container .team-img {
-  padding: 1em;
-  width: 33%;
-  height: 22%;
+  padding-left: 0.5em;
+  padding-top: 0.5em;
+  aspect-ratio: 1/1;
+  width: 30%;
+  margin-bottom: 1em;
 }
 
 .team-section .teams-container .team-content .team-details {
@@ -267,17 +285,17 @@ body {
   gap: 2em;
 }
 
-.team-section .teams-container .team-content .team-details .team-name {
+.team-content .team-details .team-name {
   font-size: 2em;
 }
 
-.team-section .teams-container .team-content .team-details .team-title {
+.team-content .team-details .team-title {
   font-size: 1.2em;
   color: rgba(255, 0, 0, 0.9);
   font-style: italic;
 }
 
-.team-section .teams-container .team-content .team-details .team-description {
+.team-content .team-details .team-description {
   font-size: 1.2em;
 }
 
@@ -327,27 +345,29 @@ body {
 }
 
 /* Footer */
-.footer-container .partners-container {
+.partners-container {
   background-color: #272a31;
   color: #d3d3d3;
   padding: 1em;
 }
 
-.footer-container .partners-container .partners-container__title {
+.partners-container .partners-title {
   font-size: 2.4em;
   text-align: center;
+  text-decoration: none;
 }
 
-.footer-container .partners-container .partners-container__title::after {
+.partners-container .partners-title::after {
   content: "";
   display: block;
   padding-top: 0.25rem;
   width: 10%;
   margin: 0 auto;
   border-bottom: 0.2rem solid #ec5242;
+  text-decoration: none;
 }
 
-.footer-container .partners-container .partners-list {
+.partners-container .partners-list {
   width: 100%;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -358,28 +378,237 @@ body {
   flex-wrap: wrap;
 }
 
-.footer-container .partners-container .partners-list .hands {
+.footer .partners-container .partners-list .hands {
   fill: #272a31;
   opacity: 0.3;
 }
 
-.footer-container .copyright {
+.footer .copyright {
   display: grid;
   padding: 3em;
   grid-template-columns: 1fr 1fr;
 }
 
-.footer-container .copyright .logo {
+.footer .copyright .logo {
   width: 84px;
   height: 84px;
   align-self: center;
 }
 
-.footer-container .copyright .text-hidden {
+.footer .copyright .text-hidden {
   display: none;
 }
 
 .footer-container .copyright .copyright-text {
   font-size: 1.2em;
   align-self: center;
+}
+
+@media (min-width: 768px) {
+  .menu-bars {
+    display: none;
+  }
+
+  .header-container {
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    font-size: 1.8em;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-container .header-black {
+    padding: 0.25em 2em;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #272a31;
+  }
+
+  .header-container .header-black > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-right: 10em;
+  }
+
+  .header-container .header-black .black-items {
+    padding-right: 1em;
+  }
+
+  .header-container .header-black .black-items a {
+    color: #d3d3d3;
+    text-decoration: none;
+  }
+
+  .header-container .header-black .black-items > i {
+    fill: #d3d3d3;
+  }
+
+  .header-container .header-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 3em;
+  }
+
+  .header-container .header-logo {
+    text-decoration: none;
+    display: block;
+  }
+
+  .header-container .header-logo .nba-logo {
+    width: 15%;
+  }
+
+  .header-container .header-logo:hover {
+    cursor: pointer;
+  }
+
+  .header-container .nav-container {
+    display: block;
+  }
+
+  .navbar-container .navbar-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  .navbar-container .navbar-list .navbar-items {
+    padding: 0 0.5rem;
+    text-decoration: none;
+  }
+
+  .navbar-container .navbar-list .navbar-items .red-border {
+    border: 3px solid #ec5242;
+  }
+
+  .navbar-container .navbar-list .navbar-items .navbar-link {
+    text-decoration: none;
+  }
+
+  .main {
+    background-image: url(../Assets/images/airplane-flight-in-circle-around-earth.svg), url(../Assets/images/earth-grid-with-circular-pattern-around-.svg), url(./Assets/images/pattern_bg.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top 72% left 7.5%, top 52% right 32%, top 25% right 10%;
+    background-size: auto, auto, 30px;
+  }
+
+  .headline-container {
+    padding: 12em 10em;
+    height: 90vh;
+    width: 77%;
+    font-size: 1.3em;
+  }
+
+  .programs-section .programs-cards {
+    flex-direction: row;
+    padding: 2em;
+    gap: 0.5em;
+    width: 77%;
+  }
+
+  .programs-section .programs-cards .program-card {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    text-align: center;
+  }
+
+  .programs-section .programs-cards .program-card:hover {
+    border: 1px solid #fff;
+  }
+
+  .programs-section .programs-btn {
+    text-decoration: underline;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 1em;
+    background-color: inherit;
+    border-radius: 0.2rem;
+    color: #d3d3d3;
+    margin: 1em 0;
+  }
+
+  .programs-section .programs-btn .hidden {
+    display: inline;
+  }
+
+  .programs-section .programs-btn .visible {
+    display: none;
+  }
+
+  .team-section {
+    background-color: #d3d3d305;
+  }
+
+  .team-section .teams-container {
+    padding: 2em 4em;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .team-section .partners-title::after {
+    width: 5%;
+  }
+
+  .team-section .teams-container .team-img {
+    padding: 1em;
+    width: 33%;
+  }
+
+  .team-section {
+    padding: 2em 12em;
+  }
+
+  .team-section .btn {
+    width: 50%;
+    margin: auto;
+  }
+
+  .partners-container .partners-title::after {
+    width: 5%;
+    border-radius: 2px;
+  }
+
+  .partners-container .partners-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .partners-container .partners-list .sponsor-img {
+    width: 100px;
+  }
+
+  .partners-container .partners-list .sponsor-img:nth-child(4),
+  .partners-container .partners-list .sponsor-img:nth-child(5) {
+    padding-left: 0;
+  }
+
+  .copyright {
+    padding: 4em 5em;
+  }
+
+  .copyright {
+    font-size: 2em;
+  }
+
+  .footer .copyright .copyright .hidden {
+    padding-top: 1em;
+    display: block;
+  }
+
+  .footer .copyright .copyright .hidden a {
+    color: #272a31;
+    display: inline;
+  }
 }
