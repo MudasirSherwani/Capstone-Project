@@ -258,7 +258,7 @@ body {
 
 .team-section .teams-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 2em;
   padding-top: 2em;
 }
@@ -267,16 +267,14 @@ body {
   display: flex;
   gap: 1em;
   background-image: url(../Assets/images/chess-board.svg);
-  background-size: 50px;
+  background-size: 30px;
   background-repeat: no-repeat;
 }
 
 .team-section .teams-container .team-img {
-  padding-left: 0.5em;
-  padding-top: 0.5em;
+  padding: 0;
   aspect-ratio: 1/1;
   width: 30%;
-  margin-bottom: 1em;
 }
 
 .team-section .teams-container .team-content .team-details {
@@ -399,7 +397,7 @@ body {
   display: none;
 }
 
-.footer-container .copyright .copyright-text {
+.footer .copyright .copyright-text {
   font-size: 1.2em;
   align-self: center;
 }
@@ -436,6 +434,7 @@ body {
     justify-content: center;
     flex-direction: row;
     padding-right: 10em;
+    cursor: pointer;
   }
 
   .header-container .header-black .black-items {
@@ -566,7 +565,7 @@ body {
 
   .team-section .teams-container .team-img {
     padding: 1em;
-    width: 33%;
+    width: 30%;
   }
 
   .team-section {

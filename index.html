@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>NBA Home Page</title>
 </head>
-<body>
+<body onload="ShowTeamDataOnload()">
+    <!-- header area -->
     <header class="header-container">
       <div class="header-black">
         <ul>
-          <li class="black-items fab fa-facebook-f gray"><a href=""></a></li>
-          <li class="black-items fab fa-twitter gray"><a href=""></a></li>
-          <li class="black-items"><a href="">English</a></li>
-          <li class="black-items"><a href="">My Page</a></li>
-          <li class="black-items"><a href="">Logout</a></li>
+          <li class="black-items fab fa-facebook-f gray"><a href="#"></a></li>
+          <li class="black-items fab fa-twitter gray"><a href="#"></a></li>
+          <li class="black-items"><a href="#">English</a></li>
+          <li class="black-items"><a href="#">My Page</a></li>
+          <li class="black-items"><a href="#">Logout</a></li>
         </ul>
       </div>
       <div class="header-white">
@@ -37,6 +38,9 @@
       </div>
     </header> 
     <main class="main">
+          <!-- Main headline background image -->
+      <img alt="headline main background of capston" style="position: absolute; width: 100%; z-index: -1;" src="/Assets/images/background12.PNG" class="background-image">
+          <!--Humbarge Overlay Menu area -->
       <div class="overlay-menu">
         <div>
           <i onclick="hamburgeOff()" class="fa-solid fa-close fa-2x close-hamburg"></i>
@@ -50,6 +54,7 @@
           <a href="./index.html"><p>NBA</p></a>
         </nav>
       </div>
+          <!-- Main headline content area -->
       <section class="headline-container">
         <h2 class="hello-world">"Hello! Sharing World"</h2>
         <h1 class="heading"> NBA - ABU DHABI GAMES 2022 </h1>
@@ -67,6 +72,7 @@
         </div>
       </section>
     </main>
+              <!-- Program cards Section -->
     <section class="programs-section">
       <div class="programs-background">
         <h2 class="programs-title lato-700">Main Program</h2>
@@ -112,36 +118,14 @@
           <span class="hidden">See the whole program</span></a>
       </div>
     </section>
+          <!-- Featured Team Section -->
     <section class="team-section">
       <h2 class="team-section-title">Featured Teams</h2>
-      <div class="teams-container">
-      <div class="team-content">
-        <img src="./Assets/logo/logo-atlanta-hawks.png" alt="Atlanta Hawks Team logo" class="team-img" />
-        <div class="team-details">
-          <div>
-            <h3 class="team-name">Atlanta Hawks</h3>
-            <p class="team-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <p class="team-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus magni eius perferendis expedita.</p>
-        </div>
+      <div id="teams-container" class="teams-container">
       </div>
-      <div class="team-content">
-        <img src="./Assets/logo/logo-milwaukee-bucks.PNG" alt="Milwaukee Bucks Team logo" class="team-img" />
-        <div class="team-details">
-          <div>
-            <h3 class="team-name">Milwaukee Bucks</h3>
-            <p class="team-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <p class="team-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus magni eius perferendis expedita.</p>
-        </div>
-      </div>
-    </div>
-    <a href="#" class="btn btn-primary" id="more">
-    <span class="more">MORE</span>
-    <span class="less">LESS</span>
-    <img src="./Assets/icons/angles-down.png" style="width: 18px; height: 18px; margin-left: 10px;"/>
     </section>
   </main>
+            <!-- footer Area with partner -->
   <footer class="footer" id="footer">
     <section class="partners-container" id="partners">
       <h4 class="partners-title">Partners</h4>
@@ -162,5 +146,6 @@
   </footer>
     <script src="./script.js"></script>
     <script src="./mobile_menu.js"></script>
+    <script src="./featured_team.js"></script>
 </body>
 </html>
