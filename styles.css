@@ -494,6 +494,10 @@ body {
     text-decoration: none;
   }
 
+  .header-container .navbar-container {
+    display: block;
+  }
+
   .main {
     background-image: url(../Assets/images/airplane-flight-in-circle-around-earth.svg), url(../Assets/images/earth-grid-with-circular-pattern-around-.svg), url(./Assets/images/pattern_bg.png);
     background-repeat: no-repeat, no-repeat, no-repeat;

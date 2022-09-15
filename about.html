@@ -24,7 +24,7 @@
       <div class="header-white">
         <a href="./index.html" class="header-logo" ><img  src="./Assets/logo/logo-Nba.PNG" alt="NBA logo" class="nba-logo"/></a>
           <ul class="menu-bars">
-            <i class="fa-solid fa-bars fa-2x black"></i>
+            <i class="fa-solid fa-bars fa-2x black" onclick="hamburgeOn()"></i>
           </ul>
         <nav class="navbar-container">
           <ul class="navbar-list">
@@ -39,6 +39,19 @@
       </div>
     </header>
     <main class="main">
+      <div class="overlay-menu">
+        <div>
+          <i onclick="hamburgeOff()" class="fa-solid fa-close fa-2x close-hamburg"></i>
+        </div>
+        <nav class="overlay-menu-list" onclick="hamburgeOff()">
+          <a href="./about.html"><p>About</p></a>
+          <a href="#about"><p>Program</p></a>
+          <a href="#contact"><p>Join</p></a>
+          <a href="#contact"><p>Sponsor</p></a>
+          <a href="#contact"><p>News</p></a>
+          <a href="./index.html"><p>NBA</p></a>
+        </nav>
+      </div>
       <section class="headline-container">
         <h2 class="hello-world">"Hello! Sharing World"</h2>
         <h1 class="heading"> NBA - ABU DHABI GAMES 2022 </h1>
@@ -105,7 +118,7 @@
         <p class="copyright-text"> @2022 NBA. <br />Some Rights Reserved.</p>
       </section>
     </footer>
-    <script src="./script.js"></script>
+        <script src="./script.js"></script>
     <script src="./mobile_menu.js"></script>
   </body>
 </html>
