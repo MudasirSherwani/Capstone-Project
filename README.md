@@ -1,22 +1,23 @@
 # National Basketball Association (NBA)
 
-> This is Capstone project in Microverse Curriculum. 
-> In the Mobile View and Desktop View Portfolio there are few important sections Header, Headline, Project Area, Contact
-Form with footer are visible.
+> This is Capstone project in Microverse Curriculum Module No.1. 
+> In the Mobile View and Desktop View of Capstion Project there are few important sections 2 Header, Headline, Main Program Section, Featured Teams Section
+ with footer are visible.
 
-## Live Demo Link
+## Website Live Demo Link
 
-- [NBA](https://mudasirsherwani.github.io)
+- [NBA (The Capston Project)](https://mudasirsherwani.github.io/Capstone-Project/)
 
 
-## Screen Snapshot of Project
+## Intro Video Of Project
 
-![Project in Mobile View](images/11.png)!
+- [Watch Intro to NBA (The Capston Project)](https://www.loom.com/share/fe3063924366423ebb11204c5a07083d)
 
 ## Working Modules
 
 - Home Page
 - About Page
+- Mobile Hamburge Menu
 
 
 ## Built With
@@ -46,7 +47,7 @@ Linters Installed
 
 ### Prerequisites
 - Visual Studio
-- Knowldege About HTML / CSS
+- Knowldege About HTML / CSS / JAVASCRIPT
 - Lighthouse
 - Webhint
 - Stylelint
@@ -83,6 +84,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- This project is premised and inspired by [Cindy Shin](https://www.behance.net/adagio07), 
+  who is the [author of the  original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 - microverseinc
 - Inspiration
 - etc

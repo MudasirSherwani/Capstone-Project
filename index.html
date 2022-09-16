@@ -4,16 +4,148 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="mobile_menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>NBA Home Page</title>
 </head>
-<body>
-    <header>
-    </header>
-    <main>
+<body onload="ShowTeamDataOnload()">
+    <!-- header area -->
+    <header class="header-container">
+      <div class="header-black">
+        <ul>
+          <li class="black-items fab fa-facebook-f gray"><a href="#"></a></li>
+          <li class="black-items fab fa-twitter gray"><a href="#"></a></li>
+          <li class="black-items"><a href="#">English</a></li>
+          <li class="black-items"><a href="#">My Page</a></li>
+          <li class="black-items"><a href="#">Logout</a></li>
+        </ul>
+      </div>
+      <div class="header-white">
+        <a href="./index.html" class="header-logo" ><img src="./Assets/logo/logo-Nba.PNG" alt="NBA logo" class="nba-logo"/></a>
+          <ul class="menu-bars">
+            <i class="fa-solid fa-bars fa-2x black" onclick="hamburgeOn()"></i>
+          </ul>
+        <nav class="navbar-container">
+          <ul class="navbar-list">
+            <li class="navbar-items"> <a href="./about.html" class="navbar-link">About</a> </li>
+            <li class="navbar-items"> <a href="#" class="navbar-link">Program</a> </li>
+            <li class="navbar-items"> <a href="#" class="navbar-link">Join</a> </li>
+            <li class="navbar-items"> <a href="#" class="navbar-link">Sponsor</a> </li>
+            <li class="navbar-items"> <a href="#" class="navbar-link">News</a> </li>
+            <li class="navbar-items"> <a href="./index.html" class="navbar-link red-border">NBA</a> </li>
+          </ul>
+        </nav>
+      </div>
+    </header> 
+    <main class="main">
+          <!-- Main headline background image -->
+      <img alt="headline main background of capston" src="./Assets/images/background12.PNG" class="background-image">
+          <!--Humbarge Overlay Menu area -->
+      <div class="overlay-menu">
+        <div>
+          <i onclick="hamburgeOff()" class="fa-solid fa-close fa-2x close-hamburg"></i>
+        </div>
+        <nav class="overlay-menu-list" onclick="hamburgeOff()">
+          <a href="./about.html"><p>About</p></a>
+          <a href="#about"><p>Program</p></a>
+          <a href="#contact"><p>Join</p></a>
+          <a href="#contact"><p>Sponsor</p></a>
+          <a href="#contact"><p>News</p></a>
+          <a href="./index.html"><p>NBA</p></a>
+        </nav>
+      </div>
+          <!-- Main headline content area -->
+      <section class="headline-container">
+        <h2 class="hello-world">"Hello! Sharing World"</h2>
+        <h1 class="heading"> NBA - ABU DHABI GAMES 2022 </h1>
+        <p class="heading-details">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem,
+          error? Fugiat omnis sed suscipit deleniti, a rem dolorem at, quisquam
+          aliquid voluptatem nobis quas quo!
+        </p>
+        <div>
+          <p class="program-date">
+            <span class="normal-font">2022.10.06</span>(THU) &
+            <span class="normal-font">08</span>(SAT)
+          </p>
+          <p class="program-location">@ Etihad Arena on Yas Island, Abu Dhabi</p>
+        </div>
+      </section>
     </main>
-    <footer class="footer">
-    </footer>
+              <!-- Program cards Section -->
+    <section class="programs-section">
+      <div class="programs-background">
+        <h2 class="programs-title lato-700">Main Program</h2>
+        <div class="programs-cards" id="programs-section">
+          <div class="program-card">
+            <img class="program-icons" src="./Assets/icons/002-teacher.png" alt="Lectures Images"/>
+            <h2 class="program-cards-title">Lectures</h2>
+            <p class="program-cards-detail">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam numquam veniam ducimus ipsum itaque atque.
+            </p>
+          </div>
+          <div class="program-card">
+            <img class="program-icons" src="./Assets/icons/003-exhibition.png" alt="Exhibtion Images"/>
+            <h2 class="program-cards-title">Exhibition</h2>
+            <p class="program-cards-detail">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam numquam veniam ducimus ipsum itaque atque.
+            </p>
+          </div>
+          <div class="program-card">
+            <img class="program-icons" src="./Assets/icons/001-chat.png" alt="Forums Images"/>
+             <h2 class="program-cards-title">Forums</h2>
+            <p class="program-cards-detail">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam numquam veniam ducimus ipsum itaque atque.
+            </p>
+          </div>
+          <div class="program-card">
+            <img class="program-icons" src="./Assets/icons/005-communities.png" alt="CC Ignite Images"/>
+            <h2 class="program-cards-title">CC Ignite</h2>
+            <p class="program-cards-detail">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam numquam veniam ducimus ipsum itaque atque.
+            </p>
+          </div>
+          <div class="program-card">
+            <img class="program-icons" src="./Assets/icons/004-workshop.png" alt="Workshops Images"/>
+            <h2 class="program-cards-title">Workshops</h2>
+            <p class="program-cards-detail">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam numquam veniam ducimus ipsum itaque atque.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="programs-btn" id="join"
+          ><span class="visible">Buy Tickets Now !</span>
+          <span class="hidden">See the whole program</span></a>
+      </div>
+    </section>
+          <!-- Featured Team Section -->
+    <section class="team-section">
+      <h2 class="team-section-title">Featured Teams</h2>
+      <div id="teams-container" class="teams-container">
+      </div>
+    </section>
+  </main>
+            <!-- footer Area with partner -->
+  <footer class="footer" id="footer">
+    <section class="partners-container" id="partners">
+      <h4 class="partners-title">Partners</h4>
+      <div class="partners-list" id="sponsors">
+        <img src="./Assets/logo/Logo_NbaInAbuDhabi.PNG" alt=" Logo for NBA In Abu Dhabi"class="partner-img"/>
+        <img src="./Assets/logo/Logo_VisitAbuDhabi.PNG" alt="Logo for Visit Abu Dhabi"class="partner-img"/>
+        <img src="./Assets/logo/Logo_G.PNG" alt="Logo for G"class="partner-img"/>
+        <img src="./Assets/logo/Logo_Nike.PNG" alt=" Logo for Nike"class="partner-img"/>
+        <img src="./Assets/logo/Logo_SAP.PNG" alt=" Logo for SAP"class="partner-img"/>
+        <img src="./Assets/logo/logo-TISSOT.PNG" alt="Logo for Tissot"class="partner-img"/>
+      </div>
+    </section>
+    <section class="copyright">
+      <h6 class="text-hidden">Copyright</h6>
+      <img src="./Assets/logo/logo-Nba.PNG" alt="Logo image for National Basketball Association"class="logo"/>
+      <p class="copyright-text"> @2022 NBA. <br />Some Rights Reserved.</p>
+    </section>
+  </footer>
     <script src="./script.js"></script>
+    <script src="./mobile_menu.js"></script>
+    <script src="./featured_team.js"></script>
 </body>
 </html>

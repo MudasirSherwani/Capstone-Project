@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="mobile_menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>NBA About Page</title>
+  </head>
+  <body>
+    <header class="header-container">
+         <!-- Black and white Header Area -->
+      <div class="header-black">
+        <ul>
+          <li class="black-items fab fa-facebook-f gray"><a href=""></a></li>
+          <li class="black-items fab fa-twitter gray"><a href=""></a></li>
+          <li class="black-items"><a href="">English</a></li>
+          <li class="black-items"><a href="">My Page</a></li>
+          <li class="black-items"><a href="">Logout</a></li>
+        </ul>
+      </div>
+      <div class="header-white">
+        <a href="./index.html" class="header-logo" ><img  src="./Assets/logo/logo-Nba.PNG" alt="NBA logo" class="nba-logo"/></a>
+          <ul class="menu-bars">
+            <i class="fa-solid fa-bars fa-2x black" onclick="hamburgeOn()"></i>
+          </ul>
+        <nav class="navbar-container">
+          <ul class="navbar-list">
+            <li class="navbar-items"> <a href="./about.html" class="navbar-link">About</a> </li>
+            <li class="navbar-items"> <a href="#" class="navbar-link">Program</a> </li>
+            <li class="navbar-items"> <a href="#" class="navbar-link">Join</a> </li>
+            <li class="navbar-items"> <a href="#" class="navbar-link">Sponsor</a> </li>
+            <li class="navbar-items"> <a href="#" class="navbar-link">News</a> </li>
+            <li class="navbar-items"> <a href="./index.html" class="navbar-link red-border">NBA</a> </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+          <!-- Main headline background image -->
+      <img alt="headline main background of capston" src="./Assets/images/background12.PNG" class="background-image">
+          <!--Humbarge Overlay Menu area -->
+      <div class="overlay-menu">
+        <div>
+          <i onclick="hamburgeOff()" class="fa-solid fa-close fa-2x close-hamburg"></i>
+        </div>
+        <nav class="overlay-menu-list" onclick="hamburgeOff()">
+          <a href="./about.html"><p>About</p></a>
+          <a href="#about"><p>Program</p></a>
+          <a href="#contact"><p>Join</p></a>
+          <a href="#contact"><p>Sponsor</p></a>
+          <a href="#contact"><p>News</p></a>
+          <a href="./index.html"><p>NBA</p></a>
+        </nav>
+      </div>
+      <section class="headline-container">
+          <!-- Main headline content area -->
+        <h2 class="hello-world">"Hello! Sharing World"</h2>
+        <h1 class="heading"> NBA - ABU DHABI GAMES 2022 </h1>
+        <p class="heading-details">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, facere tenetur. Eaque, voluptate veritatis. Assumenda sunt ipsam harum! Tempora libero necessitatibus hic voluptates tenetur. Esse alias repellendus placeat quisquam! Assumenda.</p>
+        <div>
+          <p class="program-location">Please contact us per Email for any further questions about NBA - Abu Dhabi Games 2022</p>
+          <p class="nba-email" href="www.nba.com">info@nba.com</p>
+        </div>
+      </section>
+      <section class="about-logo-container">
+        <h2 class="logo-heading">
+          NBA Abu Dhabi Games 2022 October 6 & 8 ETIHAD ARENA
+        </h2>
+        <p class="logo-description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas eum suscipit labore sed quaerat, explicabo illo ullam alias eveniet molestiae.
+        </p>
+        <img class="logo-image" src="./Assets/logo/logo-Nba.PNG" alt="NBA Logo" />
+      </section>
+          <!-- Past matches Container -->
+      <section class="prev-games-container">
+        <h2 class="prev-game-heading">Watch Previouse Matches</h2>
+        <p class="prev-game-description">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil omnis illum harum voluptatum error dignissimos facilis beatae assumenda saepe ut?
+        </p>
+        <div class="prev-game">
+          <div class="game-container twenty-20">
+            <div class="bg-redish">
+              <div class="show">
+                <h1 class="game-heading">2020</h1>
+                <p class="game-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, similique?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="game-container twenty-19">
+            <div class="bg-redish">
+              <div class="show">
+                <h1 class="game-heading">2019</h1>
+                <p class="game-description">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, similique?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+          <!-- footer area with partners-->
+    <footer class="footer" id="footer">
+      <section class="partners-container" id="partners">
+        <h4 class="partners-title">Partners</h4>
+        <div class="partners-list" id="sponsors">
+          <img src="./Assets/logo/Logo_NbaInAbuDhabi.PNG" alt=" Logo for NBA In Abu Dhabi"class="partner-img"/>
+          <img src="./Assets/logo/Logo_VisitAbuDhabi.PNG" alt="Logo for Visit Abu Dhabi"class="partner-img"/>
+          <img src="./Assets/logo/Logo_G.PNG" alt="Logo for G"class="partner-img"/>
+          <img src="./Assets/logo/Logo_Nike.PNG" alt=" Logo for Nike"class="partner-img"/>
+          <img src="./Assets/logo/Logo_SAP.PNG" alt=" Logo for SAP"class="partner-img"/>
+          <img src="./Assets/logo/logo-TISSOT.PNG" alt="Logo for Tissot"class="partner-img"/>
+        </div>
+      </section>
+      <section class="copyright">
+        <h6 class="text-hidden">Copyright</h6>
+        <img src="./Assets/logo/logo-Nba.PNG" alt="Logo image for National Basketball Association"class="logo"/>
+        <p class="copyright-text"> @2022 NBA. <br />Some Rights Reserved.</p>
+      </section>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="./mobile_menu.js"></script>
+  </body>
+</html>

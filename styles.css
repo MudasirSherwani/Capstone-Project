@@ -1,0 +1,599 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@font-face {
+  font-family: cocogoose-medium;
+  src: url(./assets/font/Cocogoose-Classic-ExtraBold-trial.ttf);
+}
+
+@font-face {
+  font-family: cocogoose-ExtraBold;
+  src: url(./assets/font/Cocogoose-Classic-Medium-trial.ttf);
+}
+
+:root {
+  --color-black: #272a31;
+  --color-orange: #ec5242;
+  --color-gray: #d3d3d3;
+  --color-heading: hsla(6, 100%, 59%, 0.7);
+}
+
+.white {
+  color: white;
+  background-color: #ec5242;
+}
+
+.gray {
+  color: #d3d3d3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  width: 100%;
+  font-size: 62.5%;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--color-gray);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+.header-container .header-black {
+  display: none;
+}
+
+.header-container .header-logo {
+  display: none;
+}
+
+.background-image {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.main {
+  background-image: url(./Assets/images/airplane-flight-in-circle-around-earth.svg), url(./Assets/images/earth-grid-with-circular-pattern-around.svg), url(./Assets/images/pattern_bg.png);
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position: top 70% left, top 43% right, top 5% right 10%;
+  background-size: auto, auto, 30px;
+}
+
+.header-container .navbar-container {
+  display: none;
+}
+
+.headline-container {
+  padding: 1em;
+  margin: 3em 0;
+}
+
+.headline-container .hello-world {
+  font-family: Cocogoose-Classic-ExtraBold-trial, sans-serif;
+  font-size: 1.6em;
+  font-weight: bold;
+  color: var(--color-heading);
+  opacity: 0.9;
+  padding-bottom: 1rem;
+}
+
+.headline-container .heading {
+  text-transform: uppercase;
+  font-family: Cocogoose-Classic-ExtraBold-trial, sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  color: var(--color-heading);
+  opacity: 0.9;
+  padding-bottom: 1rem;
+}
+
+.heading {
+  font-size: 80px;
+  font-weight: 700;
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 1;
+  background-image: url(./Assets/images/people.jpeg);
+}
+
+.headline-container .heading .normal-font {
+  font-family: "Lato", sans-serif;
+}
+
+.main .heading-details {
+  background-color: var(--color-gray);
+  border: 0.15em solid #fff;
+  padding: 1rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.8em;
+  z-index: 11100;
+}
+
+.headline-container .program-date {
+  font-family: Cocogoose-Classic-ExtraBold-trial, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+.headline-container .program-date .normal-font {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.headline-container .program-location {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.headline-container .nba-email {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.programs-section {
+  background-image: url(./Assets/images/pattern_bg.png);
+  color: #d3d3d3;
+}
+
+.programs-section .programs-background {
+  width: 100%;
+  height: 100%;
+  background-color: #272a31;
+  opacity: 0.97;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding: 2em;
+}
+
+.programs-section .programs-title {
+  text-align: center;
+  font-size: 2em;
+}
+
+.programs-section .programs-title::after {
+  content: "";
+  display: block;
+  padding-top: 0.5rem;
+  width: 20%;
+  margin: 0 auto;
+  border-bottom: 0.1rem solid #ec5242;
+}
+
+.programs-section .programs-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2em;
+}
+
+.programs-section .program-card {
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: 20% 30% 50%;
+  column-gap: 0.01em;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2em;
+}
+
+.programs-section .program-card .program-icons {
+  list-style: none;
+  width: 40px;
+  display: block;
+}
+
+.programs-section .program-card .program-cards-title {
+  color: #ec5242;
+}
+
+.programs-section .programs-card .program-cards-detail {
+  font-size: 1.25em;
+  letter-spacing: normal;
+  font-family: "Lato", sans-serif;
+}
+
+.programs-section .programs-btn {
+  text-decoration: none;
+  font-size: 2em;
+  padding: 1em;
+  background-color: #ec5242;
+  border-radius: 0.2rem;
+  color: #d3d3d3;
+  margin: 1em 0;
+}
+
+.programs-section .programs-btn:hover {
+  cursor: pointer;
+}
+
+.programs-section .programs-btn .hidden {
+  display: none;
+}
+
+.programs-section .programs-btn .visible {
+  display: inline;
+}
+
+/*  team section */
+.team-section {
+  width: 100%;
+  background-color: #fff;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-section .team-section-title {
+  text-align: center;
+  color: #272a31;
+  font-size: 2em;
+  padding-bottom: 0.5rem;
+}
+
+.team-section .team-section-title::after {
+  content: "";
+  display: block;
+  width: 10%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+  border-bottom: 2px solid #ec5242;
+}
+
+.team-section .teams-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-top: 2em;
+}
+
+.team-section .teams-container .team-content {
+  display: flex;
+  gap: 1em;
+  background-image: url(./Assets/images/chess-board.svg);
+  background-size: 30px;
+  background-repeat: no-repeat;
+}
+
+.team-section .teams-container .team-img {
+  padding: 0;
+  aspect-ratio: 1/1;
+  width: 30%;
+}
+
+.team-section .teams-container .team-content .team-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.team-content .team-details .team-name {
+  font-size: 2em;
+}
+
+.team-content .team-details .team-title {
+  font-size: 1.2em;
+  color: rgba(255, 0, 0, 0.9);
+  font-style: italic;
+}
+
+.team-content .team-details .team-description {
+  font-size: 1.2em;
+}
+
+.team-section .btn {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  border: 0.01rem solid #272a31;
+  border-radius: 0.2rem;
+  margin-top: 2em;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 0.6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #272a31;
+}
+
+.team-section .btn:hover {
+  cursor: pointer;
+}
+
+/* Footer */
+.partners-container {
+  background-color: #272a31;
+  color: #d3d3d3;
+  padding: 1em;
+}
+
+.partners-container .partners-title {
+  font-size: 2.4em;
+  text-align: center;
+  text-decoration: none;
+}
+
+.partners-container .partners-title::after {
+  content: "";
+  display: block;
+  padding-top: 0.25rem;
+  width: 10%;
+  margin: 0 auto;
+  border-bottom: 0.2rem solid #ec5242;
+  text-decoration: none;
+}
+
+.partners-container .partners-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0 1em;
+  font-size: 3em;
+  flex-wrap: wrap;
+}
+
+.footer .partners-container .partners-list .hands {
+  fill: #272a31;
+  opacity: 0.3;
+}
+
+.footer .copyright {
+  display: grid;
+  padding: 3em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer .copyright .logo {
+  width: 84px;
+  height: 84px;
+  align-self: center;
+}
+
+.footer .copyright .text-hidden {
+  display: none;
+}
+
+.footer .copyright .copyright-text {
+  font-size: 1.2em;
+  align-self: center;
+}
+
+@media (min-width: 768px) {
+  .menu-bars {
+    display: none;
+  }
+
+  .header-container {
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    font-size: 1.8em;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header-container .header-black {
+    padding: 0.25em 2em;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #272a31;
+  }
+
+  .header-container .header-black > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-right: 10em;
+    cursor: pointer;
+  }
+
+  .header-container .header-black .black-items {
+    padding-right: 1em;
+  }
+
+  .header-container .header-black .black-items a {
+    color: #d3d3d3;
+    text-decoration: none;
+  }
+
+  .header-container .header-black .black-items > i {
+    fill: #d3d3d3;
+  }
+
+  .header-container .header-white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 3em;
+  }
+
+  .header-container .header-logo {
+    text-decoration: none;
+    display: block;
+  }
+
+  .header-container .header-logo .nba-logo {
+    width: 15%;
+  }
+
+  .header-container .header-logo:hover {
+    cursor: pointer;
+  }
+
+  .header-container .nav-container {
+    display: block;
+  }
+
+  .navbar-container .navbar-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  .navbar-container .navbar-list .navbar-items {
+    padding: 0 0.5rem;
+    text-decoration: none;
+  }
+
+  .navbar-container .navbar-list .navbar-items .red-border {
+    border: 3px solid #ec5242;
+  }
+
+  .navbar-container .navbar-list .navbar-items .navbar-link {
+    text-decoration: none;
+  }
+
+  .header-container .navbar-container {
+    display: block;
+  }
+
+  .main {
+    background-image: url(./Assets/images/airplane-flight-in-circle-around-earth.svg), url(./Assets/images/earth-grid-with-circular-pattern-around-.svg), url(./Assets/images/pattern_bg.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top 72% left 7.5%, top 52% right 32%, top 25% right 10%;
+    background-size: auto, auto, 30px;
+  }
+
+  .headline-container {
+    padding: 12em 10em;
+    height: 95vh;
+    width: 77%;
+    font-size: 1.3em;
+    margin-bottom: 10em;
+  }
+
+  .programs-section .programs-cards {
+    flex-direction: row;
+    padding: 2em;
+    gap: 0.5em;
+    width: 77%;
+  }
+
+  .programs-section .programs-cards .program-card {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    text-align: center;
+  }
+
+  .programs-section .programs-cards .program-card:hover {
+    border: 1px solid #fff;
+  }
+
+  .programs-section .programs-btn {
+    text-decoration: underline;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: 1em;
+    background-color: inherit;
+    border-radius: 0.2rem;
+    color: #d3d3d3;
+    margin: 1em 0;
+  }
+
+  .programs-section .programs-btn .hidden {
+    display: inline;
+  }
+
+  .programs-section .programs-btn .visible {
+    display: none;
+  }
+
+  .team-section {
+    background-color: #d3d3d305;
+  }
+
+  .team-section .teams-container {
+    padding: 2em 4em;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .team-section .partners-title::after {
+    width: 5%;
+  }
+
+  .team-section .teams-container .team-img {
+    padding: 1em;
+    width: 30%;
+  }
+
+  .team-section {
+    padding: 2em 12em;
+  }
+
+  .team-section .btn {
+    width: 50%;
+    margin: auto;
+  }
+
+  .partners-container .partners-title::after {
+    width: 5%;
+    border-radius: 2px;
+  }
+
+  .partners-container .partners-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+  }
+
+  .partners-container .partners-list .sponsor-img {
+    width: 100px;
+  }
+
+  .partners-container .partners-list .sponsor-img:nth-child(4),
+  .partners-container .partners-list .sponsor-img:nth-child(5) {
+    padding-left: 0;
+  }
+
+  .copyright {
+    padding: 4em 5em;
+  }
+
+  .copyright {
+    font-size: 2em;
+  }
+
+  .footer .copyright .copyright .hidden {
+    padding-top: 1em;
+    display: block;
+  }
+
+  .footer .copyright .copyright .hidden a {
+    color: #272a31;
+    display: inline;
+  }
+}
