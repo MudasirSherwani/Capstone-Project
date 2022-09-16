@@ -83,6 +83,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- This project is premised and inspired by [Cindy Shin](https://www.behance.net/adagio07), 
+  who is the [author of the  original design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
 - microverseinc
 - Inspiration
 - etc
