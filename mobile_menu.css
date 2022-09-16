@@ -27,6 +27,10 @@
   list-style: none;
 }
 
+.overlay-menu a:hover {
+  cursor: pointer;
+}
+
 .overlay-menu a {
   text-decoration: none;
 }

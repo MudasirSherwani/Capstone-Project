@@ -323,31 +323,6 @@ body {
   cursor: pointer;
 }
 
-.team-section .btn .less {
-  display: none;
-}
-
-.team-section .btn svg {
-  fill: #ec5242;
-  align-self: center;
-}
-
-.team-section .btn[data-visible="true"] {
-  gap: 0.1rem;
-}
-
-.team-section .btn[data-visible="true"] .less {
-  display: block;
-}
-
-.team-section .btn[data-visible="true"] svg {
-  transform: rotate(180deg);
-}
-
-.team-section .btn[data-visible="true"] .more {
-  display: none;
-}
-
 /* Footer */
 .partners-container {
   background-color: #272a31;
